@@ -37,6 +37,7 @@ export function switchedObject(array, container) {
         let flowersParams = {
           type: params.value,
           name: params.name,
+          location: params.location,
         };
         flowers = new Flowers(flowersParams);
         container.arr.push(flowers);

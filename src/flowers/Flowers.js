@@ -1,8 +1,8 @@
 import { Plants } from "../plants/Plants";
 
 export class Flowers extends Plants {
-  constructor({ name, type }) {
-    super({ name });
+  constructor({ name, type, location }) {
+    super({ name, location });
     this.type = type;
   }
 
