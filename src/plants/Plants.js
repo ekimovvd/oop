@@ -3,4 +3,6 @@ export class Plants {
     this.name = name;
     this.location = location;
   }
+
+  skip() {}
 }

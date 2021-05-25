@@ -15,4 +15,6 @@ export class Flowers extends Plants {
 
     return str;
   }
+
+  skip() {}
 }

@@ -15,4 +15,8 @@ export class Trees extends Plants {
 
     return str;
   }
+
+  skip(file, obj) {
+    file.writeStrFromFile(this.buildObjectFromStr(obj));
+  }
 }
