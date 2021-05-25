@@ -53,3 +53,19 @@ export function correctFile(data) {
     return element.replace("\r", "");
   });
 }
+
+export function numberLetters(str) {
+  const alphabet = "бвгджзйклмнпрстфхцчшщ".split("");
+
+  let count = 0;
+  str = str.toLowerCase().split("");
+  str.forEach((element) => {
+    alphabet.find((symbol) => {
+      if (element === symbol) {
+        count += 1;
+      }
+    });
+  });
+
+  return count;
+}
