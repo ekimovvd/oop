@@ -1,8 +1,8 @@
 import { Plants } from "../plants/Plants";
 
 export class Shrubs extends Plants {
-  constructor({ name, month }) {
-    super({ name });
+  constructor({ name, month, location }) {
+    super({ name, location });
     this.month = month;
   }
 
