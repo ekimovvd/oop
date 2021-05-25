@@ -12,12 +12,14 @@ export function switchedObject(array, container) {
       id: element[0],
       value: element[1],
       name: element[2],
+      location: element[3],
     };
     switch (params.id) {
       case "1":
         let treesParams = {
           age: params.value,
           name: params.name,
+          location: params.location,
         };
         trees = new Trees(treesParams);
         container.arr.push(trees);
@@ -26,6 +28,7 @@ export function switchedObject(array, container) {
         let shrubsParams = {
           month: params.value,
           name: params.name,
+          location: params.location,
         };
         shrubs = new Shrubs(shrubsParams);
         container.arr.push(shrubs);

@@ -1,8 +1,8 @@
 import { Plants } from "../plants/Plants";
 
 export class Trees extends Plants {
-  constructor({ name, age }) {
-    super({ name });
+  constructor({ name, age, location }) {
+    super({ name, location });
     this.age = age;
   }
 
