@@ -1,9 +1,11 @@
 import { Trees } from "../trees/Trees";
 import { Shrubs } from "../shrubs/Shrubs";
+import { Flowers } from "../flowers/Flowers";
 
 export function switchedObject(array, container) {
   let trees = null;
   let shrubs = null;
+  let flowers = null;
 
   array.forEach((element) => {
     const params = {
@@ -27,6 +29,14 @@ export function switchedObject(array, container) {
         };
         shrubs = new Shrubs(shrubsParams);
         container.arr.push(shrubs);
+        break;
+      case "3":
+        let flowersParams = {
+          type: params.value,
+          name: params.name,
+        };
+        flowers = new Flowers(flowersParams);
+        container.arr.push(flowers);
         break;
       default:
         break;
