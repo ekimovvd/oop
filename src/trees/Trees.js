@@ -29,6 +29,9 @@ export class Trees extends Plants {
       case "Shrubs":
         this.shrubs(objectOne, objectTwo, file);
         break;
+      case "Flowers":
+        this.flowers(objectOne, objectTwo, file);
+        break;
       default:
         return 0;
     }
@@ -44,5 +47,11 @@ export class Trees extends Plants {
     file.writeStrFromFile(this.buildObjectFromStr(objectOne));
     file.writeStrFromFile(objectTwo.buildObjectFromStr(objectTwo));
     file.writeStrFromFile("Trees - Shrubs");
+  }
+
+  flowers(objectOne, objectTwo, file) {
+    file.writeStrFromFile(this.buildObjectFromStr(objectOne));
+    file.writeStrFromFile(objectTwo.buildObjectFromStr(objectTwo));
+    file.writeStrFromFile("Trees - FLowers");
   }
 }
