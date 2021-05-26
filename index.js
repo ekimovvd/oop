@@ -19,8 +19,10 @@ function main(text) {
     `Кол-во элементов в контейнере: ${container.arr.length}`
   );
   file.writeStrFromFile("Обычный контейнер:");
-
   file.writeContainerFromFile(container.arr);
+
+  file.writeStrFromFile("Мультиметод:");
+  container.multimethod(file);
 
   container.clear();
   file.writeStrFromFile(
